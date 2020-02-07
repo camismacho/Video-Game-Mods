@@ -1,0 +1,38 @@
+White - Midnight Purple
+255-255-255
+
+Black - Schafter Purple
+0-0-0
+
+Electric Blue - Red
+3-83-255
+
+Mint Green - Dark Red
+0-255-140
+
+Lime Green - Orange
+94-255-1
+
+Yellow - Yellow
+255-255-0
+
+Golden Shower - Lime Green
+255-150-5
+
+Orange - Green
+255-62-0
+
+Red - Forest Green
+255-1-1
+
+Pony Pink - Foliage Green
+255-50-100
+
+Hot Pink - Olive Drab
+255-5-190
+
+Purple - Dark Earth
+35-1-255
+
+Blacklight - Desert Tan
+15-3-255

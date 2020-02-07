@@ -1,0 +1,14 @@
+Alpha Values for Windows
+
+Light: 0xA2xxxxxx
+Dark: 0xC4xxxxxx
+Limo: 0xD1xxxxxx
+Pure: 0xD6xxxxxx
+
+Colors:
+
+Red: FF0000
+Green: 00FF00
+Blue: 0000FF
+Pink: FF0ADE
+Yellow: EDFF28

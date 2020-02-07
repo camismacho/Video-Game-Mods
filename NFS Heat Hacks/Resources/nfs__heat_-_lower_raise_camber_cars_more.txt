@@ -1,0 +1,171 @@
+The method for getting the lows/highs was found by Zyy, and I (CoconutShu) have simply compiled the IDs onto his vehicle list.
+The changes made by doing this, will show to others online as well. All cars have a maximum low, and if the slider has more steps, it will just add more camber when reaching that point.
+Video guide: https://www.youtube.com/watch?v=iGbMZZbY5Q0 (By Sid)
+
+Requirements:
+Need for Speed: Heat.
+Cheat Engine.
+Recommended to have a backup save in case something goes wrong.
+-Default save location: C:\USERNAME\Documents\Need for Speed Heat "SaveGame" folder.
+
+The following list corresponds to which RideHeight_Height_Tuning each car has.
+Depending on which one it has is what you're gonna have to replace for it to get as low or high as possible
+For example: If the car has "35mm" next to it, replace the 35mm ID with one of your choice (below list of cars) and buy the car from the dealership.
+***Keep in mind that if you have any cars with the same heigtslider attached to it as the one you're replacing, these cars will get lowered too, after a restart.***
+
+Acura_NSX_2019 - 45mm
+Acura_RSXS_2004 - 55m
+AlfaRomeo_GiuliaQV_2016 - 25mm
+AstonMartin_DB11_2017 - 25mm
+AstonMartin_DB5_1964 - 35mm
+AstonMartin_Vulcan_2017 - 7mm
+Audi_R8V10_2019 - 25mm
+Audi_S5_2017 - 35mm
+BMW_i8_2018 - 7mm
+BMW_i8_2018_DeluxeEdition - 7mm
+BMW_i8Roadster_2018 - 7mm
+BMW_M2Competition_2018 - 25mm
+BMW_M3E30Evo2_1988 - 45mm
+BMW_M3E46_2003 - 35mm
+BMW_M3E46GTR_2003_RazerNFSMW - 75mm
+BMW_M3E92Coupe_2012 - 35mm
+BMW_M4_2017 - 35mm
+BMW_M4Convertible_2017 - 35mm
+BMW_M4GTS_2016_Icon - 35mm
+BMW_M5_2017 - 35mm
+BMW_X6M_2016 - 35mm
+BMW_Z4M40i_2019 - 35mm
+Buick_GrandNational_1987 - 25mm
+Chevrolet_BelAir_1955 - 25mm
+Chevrolet_C10PickupStepside_1965 - 85mm
+Chevrolet_CamaroSS_1967 - 55mm
+Chevrolet_CamaroSS_1967_RobertoRiviera - 55mm
+Chevrolet_CamaroZ28_2014 - 45mm
+Chevrolet_ColoradoZR2_2017 - 55mm
+Chevrolet_CorvetteGS_2017 - 25mm
+Chevrolet_CorvetteGS_2017_DeluxeEdition - 15mm
+Chevrolet_CorvetteZR1_2019_Icon - 15mm
+Chevrolet_CorvetteZ06_2013 - 35mm
+Dodge_ChallengerSRT_2014 - 35mm
+Dodge_Charger_1969 - 7mm
+Ferrari_458Italia_2009 - 25mm
+Ferrari_458Spider_2011 - 25mm
+Ferrari_488GTB_2016 - 35mm
+Ferrari_488Pista_2019_Icon - 35mm
+Ferrari_F40_1988 - 15mm
+Ferrari_FXXKEvo_2018_Icon - 7mm
+Ferrari_LaFerrari_2016 - 7mm
+Ferrari_Testarossa_1984_Icon - 15mm
+Ford_F150Raptor_2017 - 105mm
+Ford_F150Raptor_2017_FaithNFSP - 105mm
+Ford_FocusRS_2015 - 35mm
+Ford_GT_2017 - 15mm
+Ford_Mustang_1965 - 25mm
+Ford_MustangBoss302_1969 - 45mm
+Ford_MustangFoxbody_1990 - 55mm
+Ford_MustangGT_2015 - 35mm
+Honda_CivicTypeR_2000 - 35mm
+Honda_CivicTypeR_2015 - 25mm
+Honda_NSXTypeR_1992 - 45mm
+Honda_S2000UltimateEdition_2009 - 25mm
+Infiniti_Q60S_2017 - 25mm
+Jaguar_FTypeRConvertible_2019 - 35mm
+Jaguar_FTypeRCoupe_2015 - 35mm
+Koenigsegg_Regera_2015 - 7mm
+Lamborghini_AventadorLP7404S_2018 - 25mm
+Lamborghini_AventadorLP7404SRoadster_2018 - 7mm
+Lamborghini_AventadorSVJ_2019_Icon - 15mm
+Lamborghini_AventadorSVJRoadster_2019_Icon - 15mm
+Lamborghini_Countach_1989 - 35mm
+Lamborghini_DiabloSuperVeloce_1995 - 25mm
+Lamborghini_HuracanLP580_2018 - 15mm
+Lamborghini_HuracanLP610Spyder_2018 - 15mm
+Lamborghini_HuracanPerformante_2018_Icon - 15mm
+Lamborghini_HuracanPerformanteSpyder_2018_Icon - 15mm
+Lamborghini_MurcielagoSV_2010 - 7mm
+LandRover_Defender110_2017 - 35mm
+Lotus_ExigeS_2006 - 15mm
+Mazda_MX5_1996 - 45mm
+Mazda_MX5_2015 - 45mm
+Mazda_RX7SpiritR_2002 - 7mm
+McLaren_570S_2015 - 25mm
+McLaren_570SSpyder_2018 - 25mm
+McLaren_600LT_2018_Icon - 35mm
+McLaren_P1_2014 - 15mm
+McLaren_P1GTR_2015_Icon - 15mm
+MercedesBenz_AMGA45_2016 - 25mm
+MercedesBenz_AMGG63_2017 - 35mm
+MercedesBenz_AMGGT_2015 - 25mm
+MercedesBenz_AMGGTR_2017_Icon - 25mm
+MercedesBenz_AMGGTSRoadster_2019 - 25mm
+MercedesBenz_C63AMG_2017 - 15mm
+MercedesBenz_C63AMG_2017_DeluxeEdition - 25mm
+Mercury_Cougar_1967 - 15mm
+Mini_CountrymanJCW_2017 - 35mm
+Mitsubishi_EvolutionMR_2008 - 35mm
+Mitsubishi_EvolutionX_2008 - 15mm
+Mitsubishi_EvolutionX_2008_DeluxeEdition - 35mm
+Mitsubishi_EvolutionX_2008_PreOrderEdition_PC - 35mm
+Mitsubishi_EvolutionX_2008_PreOrderEdition_PS4 - 35mm
+Mitsubishi_EvolutionX_2008_PreOrderEdition_XB1 - 35mm
+Nissan_180sxTypeX_1996 - 35mm
+Nissan_350Z_2006 - 15mm
+Nissan_350Z_2006_AnaRiviera - 25mm
+Nissan_350Z_2006_RachelNFSU2 - 15mm
+Nissan_370Z_2019 - 45mm
+Nissan_370ZNismoIcon_2019 - 45mm
+Nissan_Fairlady240ZG_1971 - 25mm
+Nissan_GTR_2017 - 35mm
+Nissan_GTRNismo_2017_Icon - 35mm
+Nissan_GTRSkylineKPGC10_1971 - 35mm
+Nissan_SilviaSpecR_2002 - 35mm
+Nissan_SkylineGTRVSpecR32_1993 - 15mm
+Nissan_SkylineGTRVspecR34_1999 - 55mm
+Nissan_SkylineGTRVSpecR34_1999_EddieNFSU - 55mm
+Pagani_HuayraBC_2017 - 15mm
+Plymouth_Barracuda_1970 - 45mm
+Polestar_1_2020 - 25mm
+Polestar_2020_HeroCar - 35mm
+Pontiac_TransAm_1977 - 45mm
+Porsche_718CaymanGTS_2018 - 7mm
+Porsche_CaymanGT4_2015_Icon - 15mm
+Porsche_911CarreraRSR_1974 - 25mm
+Porsche_911CarreraS993_1997 - 35mm
+Porsche_911CarreraS993_1997_LucasRiviera - 65mm
+Porsche_918Spyder_2015 - 7mm
+Porsche_9912GT3RS_2019 - 15mm
+Porsche_991GT2RS_2019_Icon - 15mm
+Porsche_9912GTS_2018 - 15mm
+Porsche_9912GTSConvertible_2018 - 15mm
+Porsche_9912GTSTarga_2018 - 15mm
+Porsche_991TurboS_2018_Icon - 15mm
+Porsche_991TurboSConvertible_2018_Icon - 15mm
+Porsche_CarreraS_2014 - 35mm
+Porsche_PanameraTurbo_2017 - 15mm
+RangeRover_SportSVR_2018 - 25mm
+SRT_ViperGTS_2014 - 25mm
+Subaru_BRZPremium_2014 - 45mm
+Subaru_ImprezaWRX_2010 - 45mm
+Subaru_ImprezaWRXSTi_2006 - 45mm
+Volkswagen_Beetle_1963 - 55mm
+Volkswagen_GolfGti_1974 - 45mm
+Volkswagen_GolfGTi_2016 - 35mm
+Volvo_242DL_1975 - 55mm
+Volvo_Amazon_1970 - 45mm
+
+Suspension Strings and IDs:
+The more mm, the higher and lower the car can go.
+
+Items/StanceItems/RideHeight_Height_Tuning_7mm - 23136899
+Items/StanceItems/RideHeight_Height_Tuning_15mm - 33741274
+Items/StanceItems/RideHeight_Height_Tuning_25mm - 35933464
+Items/StanceItems/RideHeight_Height_Tuning_35mm - 50290842
+Items/StanceItems/RideHeight_Height_Tuning_45mm - 24574615
+Items/StanceItems/RideHeight_Height_Tuning_55mm - 26351360
+Items/StanceItems/RideHeight_Height_Tuning_65mm - 37511675
+Items/StanceItems/RideHeight_Height_Tuning_75mm - 56708142
+Items/StanceItems/RideHeight_Height_Tuning_85mm - 44381207
+Items/StanceItems/RideHeight_Height_Tuning_95mm - 53111321
+Items/StanceItems/RideHeight_Height_Tuning_105mm - 17062700
+Items/StanceItems/RideHeight_Height_Tuning_150mmOffroad - 55622290 (Leftover from Payback, unused in heat)
+Items/StanceItems/RideHeight_Height_Tuning_RangeRover - 1138143 (Leftover from Payback, unused in Heat)

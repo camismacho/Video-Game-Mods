@@ -1,0 +1,177 @@
+Need for Speed: Heat vehicle ID list
+
+Straight swapping some of the traffic cars, bikes, other nontraditional vehicles in might crash your game or even brick your save if you aren't aware of what you're doing. It's highly recommended to backup your save before playing around with the game in any way.
+-Default save location: C:\USERNAME\Documents\Need for Speed Heat "SaveGame" folder.
+
+Cars:
+56629070 	| Acura_NSX_2019
+3356368025	| Acura_RSXS_2004
+65323747  	| AlfaRomeo_GiuliaQV_2016
+12422093 	| AstonMartin_DB11_2017
+3422285 	| AstonMartin_DB5_1964
+39447167 	| AstonMartin_Vulcan_2017
+2862727 	| Audi_R8V10_2019
+4371237 	| Audi_S5_2017
+24982829 	| BMW_i8_2018
+43913564 	| BMW_i8_2018_DeluxeEdition
+41676280 	| BMW_i8Roadster_2018
+3335968915 	| BMW_M2Competition_2018
+3275532912 	| BMW_M3E30Evo2_1988
+1529202353 	| BMW_M3E46_2003
+8179272 	| BMW_M3E46GTR_2003_RazerNFSMW
+2777327668 	| BMW_M3E92Coupe_2012
+3080924694 	| BMW_M4_2017
+33771892 	| BMW_M4Convertible_2017
+63954397 	| BMW_M4GTS_2016_Icon
+2614252 	| BMW_M5_2017
+51175708 	| BMW_X6M_2016
+42070683 	| BMW_Z4M40i_2019
+35020734 	| Buick_GrandNational_1987
+24850994 	| Chevrolet_BelAir_1955
+35964269	| Chevrolet_C10PickupStepside_1965
+61002241	| Chevrolet_CamaroSS_1967
+34529764	| Chevrolet_CamaroSS_1967_RobertoRiviera
+2985414267	| Chevrolet_CamaroZ28_2014
+27666986	| Chevrolet_ColoradoZR2_2017
+4255884		| Chevrolet_CorvetteGS_2017
+35000016	| Chevrolet_CorvetteGS_2017_DeluxeEdition
+56631594	| Chevrolet_CorvetteZR1_2019_Icon
+2748477885	| Chevrolet_CorvetteZ06_2013
+2155991117	| Dodge_ChallengerSRT_2014
+16641532	| Dodge_Charger_1969
+28131472	| Ferrari_458Italia_2009
+12321531	| Ferrari_458Spider_2011
+30156825	| Ferrari_488GTB_2016
+1079995		| Ferrari_488Pista_2019_Icon
+51856069	| Ferrari_F40_1988
+17303768	| Ferrari_FXXKEvo_2018_Icon
+52370296	| Ferrari_LaFerrari_2016
+5035142		| Ferrari_Testarossa_1984_Icon
+31381240	| Ford_F150Raptor_2017
+16452258	| Ford_F150Raptor_2017_FaithNFSP
+144515845	| Ford_FocusRS_2015
+30580797	| Ford_GT_2017
+1685729010	| Ford_Mustang_1965
+61721122	| Ford_MustangBoss302_1969
+1134458009	| Ford_MustangFoxbody_1990
+3711843564	| Ford_MustangGT_2015
+1976733411	| Honda_CivicTypeR_2000
+38709736	| Honda_CivicTypeR_2015
+3410023889	| Honda_NSXTypeR_1992
+2105466954	| Honda_S2000UltimateEdition_2009
+26380702	| Infiniti_Q60S_2017
+17109642	| Jaguar_FTypeRConvertible_2019
+49845355	| Jaguar_FTypeRCoupe_2015
+3813565		| Koenigsegg_Regera_2015
+745710119	| Lamborghini_AventadorLP7404S_2018
+12737834	| Lamborghini_AventadorLP7404SRoadster_2018
+43946714	| Lamborghini_AventadorSVJ_2019_Icon
+27300764	| Lamborghini_AventadorSVJRoadster_2019_Icon
+44077079	| Lamborghini_Countach_1989
+2676416113	| Lamborghini_DiabloSuperVeloce_1995
+28698490	| Lamborghini_HuracanLP580_2018
+502470475	| Lamborghini_HuracanLP610Spyder_2018
+8757765		| Lamborghini_HuracanPerformante_2018_Icon
+35519401	| Lamborghini_HuracanPerformanteSpyder_2018_Icon
+1796508649	| Lamborghini_MurcielagoSV_2010
+10218814	| LandRover_Defender110_2017
+2663300950	| Lotus_ExigeS_2006
+3493325893	| Mazda_MX5_1996
+3115993779	| Mazda_MX5_2015
+2068377192	| Mazda_RX7SpiritR_2002
+3077196282	| McLaren_570S_2015
+9567498		| McLaren_570SSpyder_2018
+51983357	| McLaren_600LT_2018_Icon
+60800450	| McLaren_P1_2014
+29964431	| McLaren_P1GTR_2015_Icon
+10056847	| MercedesBenz_AMGA45_2016
+39618744	| MercedesBenz_AMGG63_2017
+3098165042	| MercedesBenz_AMGGT_2015
+61826300	| MercedesBenz_AMGGTR_2017_Icon
+17836923	| MercedesBenz_AMGGTSRoadster_2019
+6979206		| MercedesBenz_C63AMG_2017
+31540416	| MercedesBenz_C63AMG_2017_DeluxeEdition
+53163896	| Mercury_Cougar_1967
+35702964	| Mini_CountrymanJCW_2017
+4159955122	| Mitsubishi_EvolutionMR_2008
+18668890	| Mitsubishi_EvolutionX_2008
+4162857		| Mitsubishi_EvolutionX_2008_DeluxeEdition
+32222783	| Mitsubishi_EvolutionX_2008_PreOrderEdition_PC
+8544492		| Mitsubishi_EvolutionX_2008_PreOrderEdition_PS4
+49701567	| Mitsubishi_EvolutionX_2008_PreOrderEdition_XB1
+4232685860	| Nissan_180sxTypeX_1996
+6720127		| Nissan_350Z_2006
+30071293	| Nissan_350Z_2006_AnaRiviera
+30642759	| Nissan_350Z_2006_RachelNFSU2
+8848932		| Nissan_370Z_2019
+3970189		| Nissan_370ZNismoIcon_2019
+1490224944	| Nissan_Fairlady240ZG_1971
+3672500		| Nissan_GTR_2017
+12291882	| Nissan_GTRNismo_2017_Icon
+3018952854	| Nissan_GTRSkylineKPGC10_1971
+2771745190	| Nissan_SilviaSpecR_2002
+836072294	| Nissan_SkylineGTRVSpecR32_1993
+3394051734	| Nissan_SkylineGTRVspecR34_1999
+62342985	| Nissan_SkylineGTRVSpecR34_1999_EddieNFSU
+10642173	| Pagani_HuayraBC_2017
+8296865		| Plymouth_Barracuda_1970
+27985364	| Polestar_1_2020
+10533476	| Polestar_2020_HeroCar
+19617334	| Pontiac_TransAm_1977
+25655512	| Porsche_718CaymanGTS_2018
+1509104345	| Porsche_CaymanGT4_2015_Icon
+977625552	| Porsche_911CarreraRSR_1974
+1282911467	| Porsche_911CarreraS993_1997
+14921281	| Porsche_911CarreraS993_1997_LucasRiviera
+50812972	| Porsche_918Spyder_2015
+41300670	| Porsche_9912GT3RS_2019
+65528813	| Porsche_991GT2RS_2019_Icon
+2010418		| Porsche_9912GTS_2018
+37877707	| Porsche_9912GTSConvertible_2018
+39077829	| Porsche_9912GTSTarga_2018
+31147726	| Porsche_991TurboS_2018_Icon
+2695973		| Porsche_991TurboSConvertible_2018_Icon
+2010419		| Porsche_CarreraS_2014
+12232759	| Porsche_PanameraTurbo_2017
+57642606	| RangeRover_SportSVR_2018
+1799102043	| SRT_ViperGTS_2014
+918836219	| Subaru_BRZPremium_2014
+2876923829	| Subaru_ImprezaWRX_2010
+13654523	| Subaru_ImprezaWRXSTi_2006
+42883341	| Volkswagen_Beetle_1963
+1408154933	| Volkswagen_GolfGti_1974
+49626618	| Volkswagen_GolfGTi_2016
+262029611	| Volvo_242DL_1975
+48283400	| Volvo_Amazon_1970
+
+Bikes:
+61681338	| Bike_BMW_S1000RR_2019
+
+Police vehicles:
+9614921		| Chevrolet_CamaroZ28_2014_DannyShaw
+9081084		| Chevrolet_CorvetteGS_2017_Cop
+1155046585	| Dodge_ChargerSRT8_2013_Cop
+1442778649	| Ford_CrownVictoria_2008_Cop
+40578331	| Ford_CrownVictoria_2008_Player
+44907508	| Ford_Explorer_2011_Cop
+54506941	| Ford_Explorer_2011_FrankMercer
+15817422	| Generic_Rhino_2009_Cop
+
+Helicopters:
+56110776	| AI_Helicopter_Cop
+60185043	| AirWolf
+
+Traffic vehicles:
+176673327	| BMW_128i_2009
+123780329	| BMW_E46328i_1999
+3557394093	| Chevrolet_Express_2003
+3493749396	| Dodge_Caliber_2007
+1381815944	| Ford_F150_2009
+26756311	| Generic_FlatbedTruck_2003
+1982332519	| GMC_TopKick_2003
+24588336	| GMC_TopKickAmbulance_2003
+21533793	| GMC_YukonDenali_2015
+1245645664	| Infinity_G35Coupe_2003
+
+Straight swapping some of the traffic cars, bikes, other nontraditional vehicles in might crash your game or even brick your save if you aren't aware of what you're doing. It's highly recommended to backup your save before playing around with the game in any way.
+-Default save location: C:\USERNAME\Documents\Need for Speed Heat "SaveGame" folder.

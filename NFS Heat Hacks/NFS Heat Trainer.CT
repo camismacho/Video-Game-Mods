@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="29">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"Infinite Health"</Description>
+      <VariableType>Float</VariableType>
+      <Address>"NeedForSpeedHeat.exe"+04900170</Address>
+      <Offsets>
+        <Offset>20</Offset>
+        <Offset>68</Offset>
+        <Offset>80</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>27</ID>
+      <Description>"Infinite NOS"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe
+  Version: 
+  Date   : 2019-12-14
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C06B100)
+define(bytes,FF CA 48 8D 8E 90 03 00 00)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C06B100)
+
+label(code)
+label(return)
+label(usenos)
+
+newmem:
+
+
+code:
+  cmp edx, 1
+  jg usenos
+  nop
+  lea rcx,[rsi+00000390]
+  jmp return
+usenos:
+  dec edx
+  lea rcx,[rsi+00000390]
+  jmp return
+
+address:
+  jmp newmem
+  nop 4
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // dec edx
+  // lea rcx,[rsi+00000390]
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C06B100
+
+"NeedForSpeedHeat.exe"+C06B0D8: B8 FF FF 00 00           -  mov eax,0000FFFF
+"NeedForSpeedHeat.exe"+C06B0DD: 48 89 D9                 -  mov rcx,rbx
+"NeedForSpeedHeat.exe"+C06B0E0: 66 01 43 24              -  add [rbx+24],ax
+"NeedForSpeedHeat.exe"+C06B0E4: E8 F7 70 21 F5           -  call NeedForSpeedHeat.exe+12821E0
+"NeedForSpeedHeat.exe"+C06B0E9: 48 8B 86 A0 04 00 00     -  mov rax,[rsi+000004A0]
+"NeedForSpeedHeat.exe"+C06B0F0: 83 78 20 01              -  cmp dword ptr [rax+20],01
+"NeedForSpeedHeat.exe"+C06B0F4: 7E 1E                    -  jle NeedForSpeedHeat.exe+C06B114
+"NeedForSpeedHeat.exe"+C06B0F6: 8B 96 E8 04 00 00        -  mov edx,[rsi+000004E8]
+"NeedForSpeedHeat.exe"+C06B0FC: 85 D2                    -  test edx,edx
+"NeedForSpeedHeat.exe"+C06B0FE: 7E 14                    -  jle NeedForSpeedHeat.exe+C06B114
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C06B100: FF CA                    -  dec edx
+"NeedForSpeedHeat.exe"+C06B102: 48 8D 8E 90 03 00 00     -  lea rcx,[rsi+00000390]
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06B109: 89 96 E8 04 00 00        -  mov [rsi+000004E8],edx
+"NeedForSpeedHeat.exe"+C06B10F: E8 3C E6 A0 F5           -  call NeedForSpeedHeat.exe+1A79750
+"NeedForSpeedHeat.exe"+C06B114: E8 57 86 2A F5           -  call NeedForSpeedHeat.exe+1313770
+"NeedForSpeedHeat.exe"+C06B119: 0F 57 C9                 -  xorps xmm1,xmm1
+"NeedForSpeedHeat.exe"+C06B11C: 48 89 F1                 -  mov rcx,rsi
+"NeedForSpeedHeat.exe"+C06B11F: F2 0F 5A C8              -  cvtsd2ss xmm1,xmm0
+"NeedForSpeedHeat.exe"+C06B123: F3 0F 5C CE              -  subss xmm1,xmm6
+"NeedForSpeedHeat.exe"+C06B127: E8 04 C5 A0 F5           -  call NeedForSpeedHeat.exe+1A77630
+"NeedForSpeedHeat.exe"+C06B12C: 48 8B 5C 24 40           -  mov rbx,[rsp+40]
+"NeedForSpeedHeat.exe"+C06B131: 48 8B 74 24 50           -  mov rsi,[rsp+50]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>14</ID>
+      <Description>"Possibly inf nos 1"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"NeedForSpeedHeat.exe"+047C0710</Address>
+      <Offsets>
+        <Offset>4E8</Offset>
+        <Offset>2D8</Offset>
+        <Offset>40</Offset>
+        <Offset>30</Offset>
+        <Offset>28</Offset>
+        <Offset>10</Offset>
+        <Offset>28</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>21</ID>
+      <Description>"Possibly inf nos 2"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"NeedForSpeedHeat.exe"+04809A08</Address>
+      <Offsets>
+        <Offset>470</Offset>
+        <Offset>70</Offset>
+        <Offset>60</Offset>
+        <Offset>80</Offset>
+        <Offset>28</Offset>
+        <Offset>8C0</Offset>
+        <Offset>100</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>22</ID>
+      <Description>"Possibly inf nos 3"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"NeedForSpeedHeat.exe"+048B2048</Address>
+      <Offsets>
+        <Offset>3E8</Offset>
+        <Offset>80</Offset>
+        <Offset>58</Offset>
+        <Offset>60</Offset>
+        <Offset>80</Offset>
+        <Offset>8</Offset>
+        <Offset>8</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>23</ID>
+      <Description>"Possibly inf nos 4"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"NeedForSpeedHeat.exe"+04900170</Address>
+      <Offsets>
+        <Offset>388</Offset>
+        <Offset>70</Offset>
+        <Offset>50</Offset>
+        <Offset>60</Offset>
+        <Offset>80</Offset>
+        <Offset>30</Offset>
+        <Offset>58</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>24</ID>
+      <Description>"Possibly inf nos 5"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"NeedForSpeedHeat.exe"+04900120</Address>
+      <Offsets>
+        <Offset>470</Offset>
+        <Offset>70</Offset>
+        <Offset>60</Offset>
+        <Offset>10</Offset>
+        <Offset>68</Offset>
+        <Offset>10</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>25</ID>
+      <Description>"disable dec nos"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe
+  Version: 
+  Date   : 2019-12-14
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C06B109)
+define(bytes,89 96 E8 04 00 00)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C06B109)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  nop
+  jmp return
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // mov [rsi+000004E8],edx
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C06B109
+
+"NeedForSpeedHeat.exe"+C06B0E0: 66 01 43 24              -  add [rbx+24],ax
+"NeedForSpeedHeat.exe"+C06B0E4: E8 F7 70 21 F5           -  call NeedForSpeedHeat.exe+12821E0
+"NeedForSpeedHeat.exe"+C06B0E9: 48 8B 86 A0 04 00 00     -  mov rax,[rsi+000004A0]
+"NeedForSpeedHeat.exe"+C06B0F0: 83 78 20 01              -  cmp dword ptr [rax+20],01
+"NeedForSpeedHeat.exe"+C06B0F4: 7E 1E                    -  jle NeedForSpeedHeat.exe+C06B114
+"NeedForSpeedHeat.exe"+C06B0F6: 8B 96 E8 04 00 00        -  mov edx,[rsi+000004E8]
+"NeedForSpeedHeat.exe"+C06B0FC: 85 D2                    -  test edx,edx
+"NeedForSpeedHeat.exe"+C06B0FE: 7E 14                    -  jle NeedForSpeedHeat.exe+C06B114
+"NeedForSpeedHeat.exe"+C06B100: FF CA                    -  dec edx
+"NeedForSpeedHeat.exe"+C06B102: 48 8D 8E 90 03 00 00     -  lea rcx,[rsi+00000390]
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C06B109: 89 96 E8 04 00 00        -  mov [rsi+000004E8],edx
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06B10F: E8 3C E6 A0 F5           -  call NeedForSpeedHeat.exe+1A79750
+"NeedForSpeedHeat.exe"+C06B114: E8 57 86 2A F5           -  call NeedForSpeedHeat.exe+1313770
+"NeedForSpeedHeat.exe"+C06B119: 0F 57 C9                 -  xorps xmm1,xmm1
+"NeedForSpeedHeat.exe"+C06B11C: 48 89 F1                 -  mov rcx,rsi
+"NeedForSpeedHeat.exe"+C06B11F: F2 0F 5A C8              -  cvtsd2ss xmm1,xmm0
+"NeedForSpeedHeat.exe"+C06B123: F3 0F 5C CE              -  subss xmm1,xmm6
+"NeedForSpeedHeat.exe"+C06B127: E8 04 C5 A0 F5           -  call NeedForSpeedHeat.exe+1A77630
+"NeedForSpeedHeat.exe"+C06B12C: 48 8B 5C 24 40           -  mov rbx,[rsp+40]
+"NeedForSpeedHeat.exe"+C06B131: 48 8B 74 24 50           -  mov rsi,[rsp+50]
+"NeedForSpeedHeat.exe"+C06B136: 0F 28 74 24 20           -  movaps xmm6,[rsp+20]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>26</ID>
+      <Description>"disable inc nos"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe
+  Version: 
+  Date   : 2019-12-14
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C06B5A5)
+define(bytes,89 93 E8 04 00 00)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C06B5A5)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  nop
+  jmp return
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // mov [rbx+000004E8],edx
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C06B5A5
+
+"NeedForSpeedHeat.exe"+C06B574: 0F 8D F0 00 00 00           -  jnl NeedForSpeedHeat.exe+C06B66A
+"NeedForSpeedHeat.exe"+C06B57A: 0F 28 C6                    -  movaps xmm0,xmm6
+"NeedForSpeedHeat.exe"+C06B57D: F3 0F 58 83 E4 04 00 00     -  addss xmm0,[rbx+000004E4]
+"NeedForSpeedHeat.exe"+C06B585: F3 0F 5F C7                 -  maxss xmm0,xmm7
+"NeedForSpeedHeat.exe"+C06B589: F3 0F 5D 41 5C              -  minss xmm0,[rcx+5C]
+"NeedForSpeedHeat.exe"+C06B58E: F3 0F 11 83 E4 04 00 00     -  movss [rbx+000004E4],xmm0
+"NeedForSpeedHeat.exe"+C06B596: 0F 2F 41 5C                 -  comiss xmm0,[rcx+5C]
+"NeedForSpeedHeat.exe"+C06B59A: 72 21                       -  jb NeedForSpeedHeat.exe+C06B5BD
+"NeedForSpeedHeat.exe"+C06B59C: FF C2                       -  inc edx
+"NeedForSpeedHeat.exe"+C06B59E: 48 8D 8B 90 03 00 00        -  lea rcx,[rbx+00000390]
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C06B5A5: 89 93 E8 04 00 00           -  mov [rbx+000004E8],edx
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06B5AB: E8 A0 E1 A0 F5              -  call NeedForSpeedHeat.exe+1A79750
+"NeedForSpeedHeat.exe"+C06B5B0: 48 87 0D 85 4C 34 08        -  xchg [NeedForSpeedHeat.exe+143B023C],rcx
+"NeedForSpeedHeat.exe"+C06B5B7: 89 BB E4 04 00 00           -  mov [rbx+000004E4],edi
+"NeedForSpeedHeat.exe"+C06B5BD: 48 8B 83 A0 04 00 00        -  mov rax,[rbx+000004A0]
+"NeedForSpeedHeat.exe"+C06B5C4: F3 0F 10 48 5C              -  movss xmm1,[rax+5C]
+"NeedForSpeedHeat.exe"+C06B5C9: 39 BB E8 04 00 00           -  cmp [rbx+000004E8],edi
+"NeedForSpeedHeat.exe"+C06B5CF: 7E 2B                       -  jle NeedForSpeedHeat.exe+C06B5FC
+"NeedForSpeedHeat.exe"+C06B5D1: 0F 2F CF                    -  comiss xmm1,xmm7
+"NeedForSpeedHeat.exe"+C06B5D4: 76 0E                       -  jna NeedForSpeedHeat.exe+C06B5E4
+"NeedForSpeedHeat.exe"+C06B5D6: F3 0F 10 83 64 03 00 00     -  movss xmm0,[rbx+00000364]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>28</ID>
+      <Description>"Infinite Health"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe (paused)
+  Version: 
+  Date   : 2019-12-15
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C069367)
+define(bytes,F3 0F 11 71 20)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C069367)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  nop
+  jmp return
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // movss [rcx+20],xmm6
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C069367
+
+"NeedForSpeedHeat.exe"+C069342: 48 87 14 24                 -  xchg [rsp],rdx
+"NeedForSpeedHeat.exe"+C069346: C3                          -  ret 
+"NeedForSpeedHeat.exe"+C069347: 66 0F 1F 84 00 00 00 00 00  -  nop [rax+rax+00000000]
+"NeedForSpeedHeat.exe"+C069350: 48 89 5C 24 08              -  mov [rsp+08],rbx
+"NeedForSpeedHeat.exe"+C069355: 57                          -  push rdi
+"NeedForSpeedHeat.exe"+C069356: 48 83 EC 30                 -  sub rsp,30
+"NeedForSpeedHeat.exe"+C06935A: 31 DB                       -  xor ebx,ebx
+"NeedForSpeedHeat.exe"+C06935C: 0F 29 74 24 20              -  movaps [rsp+20],xmm6
+"NeedForSpeedHeat.exe"+C069361: 0F 28 F1                    -  movaps xmm6,xmm1
+"NeedForSpeedHeat.exe"+C069364: 48 89 CF                    -  mov rdi,rcx
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C069367: F3 0F 11 71 20              -  movss [rcx+20],xmm6
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06936C: 0F 2E B1 F8 03 00 00        -  ucomiss xmm6,[rcx+000003F8]
+"NeedForSpeedHeat.exe"+C069373: 8D 43 01                    -  lea eax,[rbx+01]
+"NeedForSpeedHeat.exe"+C069376: 74 02                       -  je NeedForSpeedHeat.exe+C06937A
+"NeedForSpeedHeat.exe"+C069378: 89 D8                       -  mov eax,ebx
+"NeedForSpeedHeat.exe"+C06937A: 84 C0                       -  test al,al
+"NeedForSpeedHeat.exe"+C06937C: 75 3A                       -  jne NeedForSpeedHeat.exe+C0693B8
+"NeedForSpeedHeat.exe"+C06937E: 8B 91 E0 03 00 00           -  mov edx,[rcx+000003E0]
+"NeedForSpeedHeat.exe"+C069384: 0F BA E2 11                 -  bt edx,11
+"NeedForSpeedHeat.exe"+C069388: 72 0E                       -  jb NeedForSpeedHeat.exe+C069398
+"NeedForSpeedHeat.exe"+C06938A: 0F BA E2 12                 -  bt edx,12
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>30</ID>
+      <Description>"Disable Busting"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local pattern = "47 61 6D 65 70 6C 61 79 2F 54 77 65 61 6B 61 62 6C 65 73 2F 43 68 61 73 65 5F 44 69 73 61 62 6C 65 42 75 73 74 69 6E 67 00 66 61 6C 73 65"
+local replace = "47 61 6D 65 70 6C 61 79 2F 54 77 65 61 6B 61 62 6C 65 73 2F 43 68 61 73 65 5F 44 69 73 61 62 6C 65 42 75 73 74 69 6E 67 00 74 72 75 65 00"
+-- edit the name of the cheat
+-- edit the pattern to search
+-- edit the replacement bytes
+-- use ?? to ignore the bytes
+-- do not edit the code below
+local scans = AOBScan(pattern)
+if scans == nil then
+  showMessage("Unable to find pattern:\n"..pattern)
+else
+  local saved = {}
+  local length = (#replace + 1) / 3
+  for i = 0, scans.Count - 1 do
+    local backup = readBytes(scans[i], length, true)
+    local bytes = {}
+    for hex in string.gmatch(replace, "%S+") do
+      local size = #bytes + 1
+      if hex == "??" then
+        bytes[size] = backup[size]
+      else
+        bytes[size] = tonumber(hex, 16)
+      end
+    end
+    saved[i] = backup
+    writeBytes(scans[i], bytes)
+  end
+  _G[cheat_name] = {
+    ["scans"] = scans,
+    ["saved"] = saved
+  }
+end
+[DISABLE]
+local vars = _G[cheat_name]
+if vars ~= nil then
+  local scans = vars.scans
+  local saved = vars.saved
+  for i = 0, scans.Count - 1 do
+    writeBytes(scans[i], saved[i])
+  end
+  scans.Destroy()
+  vars.scans = nil
+  vars.saved = nil
+  vars = nil
+  _G[cheat_name] = nil
+end
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>32</ID>
+      <Description>"Unlock All Cars"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{$lua}
+if syntaxcheck then return end
+[ENABLE]
+local pattern = "47 61 6D 65 70 6C 61 79 2F 54 77 65 61 6B 61 62 6C 65 73 2F 55 6E 6C 6F 63 6B 41 6C 6C 43 61 72 73 00 46 61 6C 73 65"
+local replace = "47 61 6D 65 70 6C 61 79 2F 54 77 65 61 6B 61 62 6C 65 73 2F 55 6E 6C 6F 63 6B 41 6C 6C 43 61 72 73 00 54 72 75 65 00"
+-- edit the name of the cheat
+-- edit the pattern to search
+-- edit the replacement bytes
+-- use ?? to ignore the bytes
+-- do not edit the code below
+local scans = AOBScan(pattern)
+if scans == nil then
+  showMessage("Unable to find pattern:\n"..pattern)
+else
+  local saved = {}
+  local length = (#replace + 1) / 3
+  for i = 0, scans.Count - 1 do
+    local backup = readBytes(scans[i], length, true)
+    local bytes = {}
+    for hex in string.gmatch(replace, "%S+") do
+      local size = #bytes + 1
+      if hex == "??" then
+        bytes[size] = backup[size]
+      else
+        bytes[size] = tonumber(hex, 16)
+      end
+    end
+    saved[i] = backup
+    writeBytes(scans[i], bytes)
+  end
+  _G[cheat_name] = {
+    ["scans"] = scans,
+    ["saved"] = saved
+  }
+end
+[DISABLE]
+local vars = _G[cheat_name]
+if vars ~= nil then
+  local scans = vars.scans
+  local saved = vars.saved
+  for i = 0, scans.Count - 1 do
+    writeBytes(scans[i], saved[i])
+  end
+  scans.Destroy()
+  vars.scans = nil
+  vars.saved = nil
+  vars = nil
+  _G[cheat_name] = nil
+end
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>34</ID>
+      <Description>"No description"</Description>
+      <VariableType>Double</VariableType>
+      <Address>1D204A640</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>35</ID>
+      <Description>"No description"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>1D204A644</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>37</ID>
+      <Description>"infinite nos"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe (paused)
+  Version: 
+  Date   : 2019-12-15
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C066ED1)
+define(bytes,F3 0F 11 B6 64 03 00 00)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C066ED1)
+
+label(code)
+label(return)
+label(myvar)
+
+newmem:
+
+code:
+  movsd xmm0,[myvar]
+  cvtsd2ss xmm6,xmm0
+  movss [rsi+00000364],xmm6
+  jmp return
+
+myvar:
+  dq (double)128
+
+address:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // movss [rsi+00000364],xmm6
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C066ED1
+
+"NeedForSpeedHeat.exe"+C066EA5: 76 32                       -  jna NeedForSpeedHeat.exe+C066ED9
+"NeedForSpeedHeat.exe"+C066EA7: F3 0F 10 B6 64 03 00 00     -  movss xmm6,[rsi+00000364]
+"NeedForSpeedHeat.exe"+C066EAF: 48 8D 8E 58 03 00 00        -  lea rcx,[rsi+00000358]
+"NeedForSpeedHeat.exe"+C066EB6: 48 8B 01                    -  mov rax,[rcx]
+"NeedForSpeedHeat.exe"+C066EB9: FF 50 48                    -  call qword ptr [rax+48]
+"NeedForSpeedHeat.exe"+C066EBC: 41 0F 28 C9                 -  movaps xmm1,xmm9
+"NeedForSpeedHeat.exe"+C066EC0: F3 0F 5C C8                 -  subss xmm1,xmm0
+"NeedForSpeedHeat.exe"+C066EC4: F3 41 0F 59 C8              -  mulss xmm1,xmm8
+"NeedForSpeedHeat.exe"+C066EC9: F3 0F 5C F1                 -  subss xmm6,xmm1
+"NeedForSpeedHeat.exe"+C066ECD: F3 0F 5F F7                 -  maxss xmm6,xmm7
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C066ED1: F3 0F 11 B6 64 03 00 00     -  movss [rsi+00000364],xmm6
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C066ED9: 48 8B 86 A0 04 00 00        -  mov rax,[rsi+000004A0]
+"NeedForSpeedHeat.exe"+C066EE0: 44 0F 28 44 24 30           -  movaps xmm8,[rsp+30]
+"NeedForSpeedHeat.exe"+C066EE6: 0F 28 74 24 50              -  movaps xmm6,[rsp+50]
+"NeedForSpeedHeat.exe"+C066EEB: F3 0F 10 40 5C              -  movss xmm0,[rax+5C]
+"NeedForSpeedHeat.exe"+C066EF0: 0F 2F C7                    -  comiss xmm0,xmm7
+"NeedForSpeedHeat.exe"+C066EF3: 76 0E                       -  jna NeedForSpeedHeat.exe+C066F03
+"NeedForSpeedHeat.exe"+C066EF5: F3 0F 10 8E 64 03 00 00     -  movss xmm1,[rsi+00000364]
+"NeedForSpeedHeat.exe"+C066EFD: F3 0F 5E C8                 -  divss xmm1,xmm0
+"NeedForSpeedHeat.exe"+C066F01: EB 03                       -  jmp NeedForSpeedHeat.exe+C066F06
+"NeedForSpeedHeat.exe"+C066F03: 0F 57 C9                    -  xorps xmm1,xmm1
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>39</ID>
+      <Description>"nos refill"</Description>
+      <VariableType>Double</VariableType>
+      <Address>19400B2B0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>40</ID>
+      <Description>"multi instant refill"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe
+  Version: 
+  Date   : 2019-12-15
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C06B58E)
+define(bytes,F3 0F 11 83 E4 04 00 00)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C06B58E)
+
+label(code)
+label(myvar)
+label(return)
+
+newmem:
+
+code:
+  movsd xmm0,[myvar]
+  cvtsd2ss xmm6,xmm0
+  movss [rbx+000004E4],xmm6
+  jmp return
+
+myvar:
+  dq (double)640
+
+address:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // movss [rbx+000004E4],xmm0
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C06B58E
+
+"NeedForSpeedHeat.exe"+C06B55B: F3 0F 58 B3 C4 04 00 00     -  addss xmm6,[rbx+000004C4]
+"NeedForSpeedHeat.exe"+C06B563: 83 F8 01                    -  cmp eax,01
+"NeedForSpeedHeat.exe"+C06B566: 0F 8E FE 00 00 00           -  jng NeedForSpeedHeat.exe+C06B66A
+"NeedForSpeedHeat.exe"+C06B56C: 8B 93 E8 04 00 00           -  mov edx,[rbx+000004E8]
+"NeedForSpeedHeat.exe"+C06B572: 39 C2                       -  cmp edx,eax
+"NeedForSpeedHeat.exe"+C06B574: 0F 8D F0 00 00 00           -  jnl NeedForSpeedHeat.exe+C06B66A
+"NeedForSpeedHeat.exe"+C06B57A: 0F 28 C6                    -  movaps xmm0,xmm6
+"NeedForSpeedHeat.exe"+C06B57D: F3 0F 58 83 E4 04 00 00     -  addss xmm0,[rbx+000004E4]
+"NeedForSpeedHeat.exe"+C06B585: F3 0F 5F C7                 -  maxss xmm0,xmm7
+"NeedForSpeedHeat.exe"+C06B589: F3 0F 5D 41 5C              -  minss xmm0,[rcx+5C]
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C06B58E: F3 0F 11 83 E4 04 00 00     -  movss [rbx+000004E4],xmm0
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06B596: 0F 2F 41 5C                 -  comiss xmm0,[rcx+5C]
+"NeedForSpeedHeat.exe"+C06B59A: 72 21                       -  jb NeedForSpeedHeat.exe+C06B5BD
+"NeedForSpeedHeat.exe"+C06B59C: FF C2                       -  inc edx
+"NeedForSpeedHeat.exe"+C06B59E: 48 8D 8B 90 03 00 00        -  lea rcx,[rbx+00000390]
+"NeedForSpeedHeat.exe"+C06B5A5: 89 93 E8 04 00 00           -  mov [rbx+000004E8],edx
+"NeedForSpeedHeat.exe"+C06B5AB: E8 A0 E1 A0 F5              -  call NeedForSpeedHeat.exe+1A79750
+"NeedForSpeedHeat.exe"+C06B5B0: 48 87 0D 85 4C 34 08        -  xchg [NeedForSpeedHeat.exe+143B023C],rcx
+"NeedForSpeedHeat.exe"+C06B5B7: 89 BB E4 04 00 00           -  mov [rbx+000004E4],edi
+"NeedForSpeedHeat.exe"+C06B5BD: 48 8B 83 A0 04 00 00        -  mov rax,[rbx+000004A0]
+"NeedForSpeedHeat.exe"+C06B5C4: F3 0F 10 48 5C              -  movss xmm1,[rax+5C]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>41</ID>
+      <Description>"Give 4 nos bottles"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe
+  Version: 
+  Date   : 2019-12-16
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C06B5A5)
+define(bytes,89 93 E8 04 00 00)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C06B5A5)
+
+label(code)
+label(return)
+
+newmem:
+
+code:
+  mov [rbx+000004E8],4
+  jmp return
+
+address:
+  jmp newmem
+  nop
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // mov [rbx+000004E8],edx
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C06B5A5
+
+"NeedForSpeedHeat.exe"+C06B574: 0F 8D F0 00 00 00           -  jnl NeedForSpeedHeat.exe+C06B66A
+"NeedForSpeedHeat.exe"+C06B57A: 0F 28 C6                    -  movaps xmm0,xmm6
+"NeedForSpeedHeat.exe"+C06B57D: F3 0F 58 83 E4 04 00 00     -  addss xmm0,[rbx+000004E4]
+"NeedForSpeedHeat.exe"+C06B585: F3 0F 5F C7                 -  maxss xmm0,xmm7
+"NeedForSpeedHeat.exe"+C06B589: F3 0F 5D 41 5C              -  minss xmm0,[rcx+5C]
+"NeedForSpeedHeat.exe"+C06B58E: F3 0F 11 83 E4 04 00 00     -  movss [rbx+000004E4],xmm0
+"NeedForSpeedHeat.exe"+C06B596: 0F 2F 41 5C                 -  comiss xmm0,[rcx+5C]
+"NeedForSpeedHeat.exe"+C06B59A: 72 21                       -  jb NeedForSpeedHeat.exe+C06B5BD
+"NeedForSpeedHeat.exe"+C06B59C: FF C2                       -  inc edx
+"NeedForSpeedHeat.exe"+C06B59E: 48 8D 8B 90 03 00 00        -  lea rcx,[rbx+00000390]
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C06B5A5: 89 93 E8 04 00 00           -  mov [rbx+000004E8],edx
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06B5AB: E8 A0 E1 A0 F5              -  call NeedForSpeedHeat.exe+1A79750
+"NeedForSpeedHeat.exe"+C06B5B0: 48 87 0D 85 4C 34 08        -  xchg [NeedForSpeedHeat.exe+143B023C],rcx
+"NeedForSpeedHeat.exe"+C06B5B7: 89 BB E4 04 00 00           -  mov [rbx+000004E4],edi
+"NeedForSpeedHeat.exe"+C06B5BD: 48 8B 83 A0 04 00 00        -  mov rax,[rbx+000004A0]
+"NeedForSpeedHeat.exe"+C06B5C4: F3 0F 10 48 5C              -  movss xmm1,[rax+5C]
+"NeedForSpeedHeat.exe"+C06B5C9: 39 BB E8 04 00 00           -  cmp [rbx+000004E8],edi
+"NeedForSpeedHeat.exe"+C06B5CF: 7E 2B                       -  jle NeedForSpeedHeat.exe+C06B5FC
+"NeedForSpeedHeat.exe"+C06B5D1: 0F 2F CF                    -  comiss xmm1,xmm7
+"NeedForSpeedHeat.exe"+C06B5D4: 76 0E                       -  jna NeedForSpeedHeat.exe+C06B5E4
+"NeedForSpeedHeat.exe"+C06B5D6: F3 0F 10 83 64 03 00 00     -  movss xmm0,[rbx+00000364]
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>43</ID>
+      <Description>"single instant refill"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe
+  Version: 
+  Date   : 2019-12-16
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C06B6B0)
+define(bytes,F3 0F 11 B3 64 03 00 00)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C06B6B0)
+
+label(code)
+label(myvar)
+label(return)
+
+newmem:
+
+code:
+  movsd xmm0,[myvar]
+  cvtsd2ss xmm6,xmm0
+  movss [rbx+00000364],xmm6
+  jmp return
+
+myvar:
+  dq (double)128
+
+address:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // movss [rbx+00000364],xmm6
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C06B6B0
+
+"NeedForSpeedHeat.exe"+C06B679: 48 8D 8B 90 03 00 00     -  lea rcx,[rbx+00000390]
+"NeedForSpeedHeat.exe"+C06B680: 88 93 EF 04 00 00        -  mov [rbx+000004EF],dl
+"NeedForSpeedHeat.exe"+C06B686: E8 95 E9 A0 F5           -  call NeedForSpeedHeat.exe+1A7A020
+"NeedForSpeedHeat.exe"+C06B68B: 48 8B 83 A0 04 00 00     -  mov rax,[rbx+000004A0]
+"NeedForSpeedHeat.exe"+C06B692: F3 0F 10 40 5C           -  movss xmm0,[rax+5C]
+"NeedForSpeedHeat.exe"+C06B697: 0F 2F 83 64 03 00 00     -  comiss xmm0,[rbx+00000364]
+"NeedForSpeedHeat.exe"+C06B69E: 76 43                    -  jna NeedForSpeedHeat.exe+C06B6E3
+"NeedForSpeedHeat.exe"+C06B6A0: F3 0F 58 B3 64 03 00 00  -  addss xmm6,[rbx+00000364]
+"NeedForSpeedHeat.exe"+C06B6A8: F3 0F 5F F7              -  maxss xmm6,xmm7
+"NeedForSpeedHeat.exe"+C06B6AC: F3 0F 5D F0              -  minss xmm6,xmm0
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C06B6B0: F3 0F 11 B3 64 03 00 00  -  movss [rbx+00000364],xmm6
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06B6B8: F3 0F 10 40 5C           -  movss xmm0,[rax+5C]
+"NeedForSpeedHeat.exe"+C06B6BD: 0F 2F C7                 -  comiss xmm0,xmm7
+"NeedForSpeedHeat.exe"+C06B6C0: 76 06                    -  jna NeedForSpeedHeat.exe+C06B6C8
+"NeedForSpeedHeat.exe"+C06B6C2: F3 0F 5E F0              -  divss xmm6,xmm0
+"NeedForSpeedHeat.exe"+C06B6C6: EB 03                    -  jmp NeedForSpeedHeat.exe+C06B6CB
+"NeedForSpeedHeat.exe"+C06B6C8: 0F 57 F6                 -  xorps xmm6,xmm6
+"NeedForSpeedHeat.exe"+C06B6CB: F3 0F 5F F7              -  maxss xmm6,xmm7
+"NeedForSpeedHeat.exe"+C06B6CF: 48 8D 8B 90 03 00 00     -  lea rcx,[rbx+00000390]
+"NeedForSpeedHeat.exe"+C06B6D6: F3 41 0F 5D F0           -  minss xmm6,xmm8
+"NeedForSpeedHeat.exe"+C06B6DB: 0F 28 CE                 -  movaps xmm1,xmm6
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>44</ID>
+      <Description>"1 bottle refill"</Description>
+      <VariableType>Float</VariableType>
+      <Address>1AB2817C4</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>45</ID>
+      <Description>"Auto Assemble script"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe
+  Version: 
+  Date   : 2019-12-16
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C06B6B0)
+define(bytes,F3 0F 11 B3 64 03 00 00)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C06B6B0)
+
+label(code)
+label(myvar)
+label(return)
+
+newmem:
+
+code:
+  movss xmm6,[myvar]
+  movss [rbx+000004E4],xmm6
+  jmp return
+
+myvar:
+  dd (float)3.5
+
+address:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // movss [rbx+00000364],xmm6
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C06B6B0
+
+"NeedForSpeedHeat.exe"+C06B679: 48 8D 8B 90 03 00 00     -  lea rcx,[rbx+00000390]
+"NeedForSpeedHeat.exe"+C06B680: 88 93 EF 04 00 00        -  mov [rbx+000004EF],dl
+"NeedForSpeedHeat.exe"+C06B686: E8 95 E9 A0 F5           -  call NeedForSpeedHeat.exe+1A7A020
+"NeedForSpeedHeat.exe"+C06B68B: 48 8B 83 A0 04 00 00     -  mov rax,[rbx+000004A0]
+"NeedForSpeedHeat.exe"+C06B692: F3 0F 10 40 5C           -  movss xmm0,[rax+5C]
+"NeedForSpeedHeat.exe"+C06B697: 0F 2F 83 64 03 00 00     -  comiss xmm0,[rbx+00000364]
+"NeedForSpeedHeat.exe"+C06B69E: 76 43                    -  jna NeedForSpeedHeat.exe+C06B6E3
+"NeedForSpeedHeat.exe"+C06B6A0: F3 0F 58 B3 64 03 00 00  -  addss xmm6,[rbx+00000364]
+"NeedForSpeedHeat.exe"+C06B6A8: F3 0F 5F F7              -  maxss xmm6,xmm7
+"NeedForSpeedHeat.exe"+C06B6AC: F3 0F 5D F0              -  minss xmm6,xmm0
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C06B6B0: F3 0F 11 B3 64 03 00 00  -  movss [rbx+00000364],xmm6
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06B6B8: F3 0F 10 40 5C           -  movss xmm0,[rax+5C]
+"NeedForSpeedHeat.exe"+C06B6BD: 0F 2F C7                 -  comiss xmm0,xmm7
+"NeedForSpeedHeat.exe"+C06B6C0: 76 06                    -  jna NeedForSpeedHeat.exe+C06B6C8
+"NeedForSpeedHeat.exe"+C06B6C2: F3 0F 5E F0              -  divss xmm6,xmm0
+"NeedForSpeedHeat.exe"+C06B6C6: EB 03                    -  jmp NeedForSpeedHeat.exe+C06B6CB
+"NeedForSpeedHeat.exe"+C06B6C8: 0F 57 F6                 -  xorps xmm6,xmm6
+"NeedForSpeedHeat.exe"+C06B6CB: F3 0F 5F F7              -  maxss xmm6,xmm7
+"NeedForSpeedHeat.exe"+C06B6CF: 48 8D 8B 90 03 00 00     -  lea rcx,[rbx+00000390]
+"NeedForSpeedHeat.exe"+C06B6D6: F3 41 0F 5D F0           -  minss xmm6,xmm8
+"NeedForSpeedHeat.exe"+C06B6DB: 0F 28 CE                 -  movaps xmm1,xmm6
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>46</ID>
+      <Description>"Auto Assemble script"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe
+  Version: 
+  Date   : 2019-12-16
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C06B6B0)
+define(bytes,F3 0F 11 B3 64 03 00 00)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C06B6B0)
+
+label(code)
+label(myvar)
+label(return)
+
+newmem:
+
+code:
+  movss xmm6,[myvar]
+  movss [rbx+000004E4],xmm6
+  jmp return
+
+myvar:
+  dd (float)3.5
+
+address:
+  jmp newmem
+  nop 3
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // movss [rbx+00000364],xmm6
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C06B6B0
+
+"NeedForSpeedHeat.exe"+C06B679: 48 8D 8B 90 03 00 00     -  lea rcx,[rbx+00000390]
+"NeedForSpeedHeat.exe"+C06B680: 88 93 EF 04 00 00        -  mov [rbx+000004EF],dl
+"NeedForSpeedHeat.exe"+C06B686: E8 95 E9 A0 F5           -  call NeedForSpeedHeat.exe+1A7A020
+"NeedForSpeedHeat.exe"+C06B68B: 48 8B 83 A0 04 00 00     -  mov rax,[rbx+000004A0]
+"NeedForSpeedHeat.exe"+C06B692: F3 0F 10 40 5C           -  movss xmm0,[rax+5C]
+"NeedForSpeedHeat.exe"+C06B697: 0F 2F 83 64 03 00 00     -  comiss xmm0,[rbx+00000364]
+"NeedForSpeedHeat.exe"+C06B69E: 76 43                    -  jna NeedForSpeedHeat.exe+C06B6E3
+"NeedForSpeedHeat.exe"+C06B6A0: F3 0F 58 B3 64 03 00 00  -  addss xmm6,[rbx+00000364]
+"NeedForSpeedHeat.exe"+C06B6A8: F3 0F 5F F7              -  maxss xmm6,xmm7
+"NeedForSpeedHeat.exe"+C06B6AC: F3 0F 5D F0              -  minss xmm6,xmm0
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C06B6B0: F3 0F 11 B3 64 03 00 00  -  movss [rbx+00000364],xmm6
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06B6B8: F3 0F 10 40 5C           -  movss xmm0,[rax+5C]
+"NeedForSpeedHeat.exe"+C06B6BD: 0F 2F C7                 -  comiss xmm0,xmm7
+"NeedForSpeedHeat.exe"+C06B6C0: 76 06                    -  jna NeedForSpeedHeat.exe+C06B6C8
+"NeedForSpeedHeat.exe"+C06B6C2: F3 0F 5E F0              -  divss xmm6,xmm0
+"NeedForSpeedHeat.exe"+C06B6C6: EB 03                    -  jmp NeedForSpeedHeat.exe+C06B6CB
+"NeedForSpeedHeat.exe"+C06B6C8: 0F 57 F6                 -  xorps xmm6,xmm6
+"NeedForSpeedHeat.exe"+C06B6CB: F3 0F 5F F7              -  maxss xmm6,xmm7
+"NeedForSpeedHeat.exe"+C06B6CF: 48 8D 8B 90 03 00 00     -  lea rcx,[rbx+00000390]
+"NeedForSpeedHeat.exe"+C06B6D6: F3 41 0F 5D F0           -  minss xmm6,xmm8
+"NeedForSpeedHeat.exe"+C06B6DB: 0F 28 CE                 -  movaps xmm1,xmm6
+}
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>47</ID>
+      <Description>"1 bottle maybe"</Description>
+      <VariableType>Float</VariableType>
+      <Address>1AB28180C</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>48</ID>
+      <Description>"Auto Assemble script"</Description>
+      <LastState/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>{ Game   : NeedForSpeedHeat.exe
+  Version: 
+  Date   : 2019-12-16
+  Author : Joseph
+
+  This script does blah blah blah
+}
+
+define(address,"NeedForSpeedHeat.exe"+C06D365)
+define(bytes,F3 0F 11 73 1C)
+
+[ENABLE]
+//code from here to '[DISABLE]' will be used to enable the cheat
+
+ 
+ 
+assert(address,bytes)
+alloc(newmem,$1000,"NeedForSpeedHeat.exe"+C06D365)
+
+label(code)
+label(myvar)
+label(return)
+
+newmem:
+
+code:
+  movss xmm6,[myvar]
+  movss [rbx+1C],xmm6
+  jmp return
+
+myvar:
+  dd (float)1.0
+
+address:
+  jmp newmem
+return:
+
+[DISABLE]
+//code from here till the end of the code will be used to disable the cheat
+address:
+  db bytes
+  // movss [rbx+1C],xmm6
+
+dealloc(newmem)
+
+{
+// ORIGINAL CODE - INJECTION POINT: "NeedForSpeedHeat.exe"+C06D365
+
+"NeedForSpeedHeat.exe"+C06D340: 73 1F                 -  jae NeedForSpeedHeat.exe+C06D361
+"NeedForSpeedHeat.exe"+C06D342: 83 79 04 00           -  cmp dword ptr [rcx+04],00
+"NeedForSpeedHeat.exe"+C06D346: 75 19                 -  jne NeedForSpeedHeat.exe+C06D361
+"NeedForSpeedHeat.exe"+C06D348: 89 D1                 -  mov ecx,edx
+"NeedForSpeedHeat.exe"+C06D34A: 48 8D 05 6F BA 7A F8  -  lea rax,[NeedForSpeedHeat.exe+4818DC0]
+"NeedForSpeedHeat.exe"+C06D351: 48 C1 E9 10           -  shr rcx,10
+"NeedForSpeedHeat.exe"+C06D355: 83 E1 01              -  and ecx,01
+"NeedForSpeedHeat.exe"+C06D358: 48 8B 0C C8           -  mov rcx,[rax+rcx*8]
+"NeedForSpeedHeat.exe"+C06D35C: E8 DF 7E 0F F5        -  call NeedForSpeedHeat.exe+1165240
+"NeedForSpeedHeat.exe"+C06D361: 83 4B 04 40           -  or dword ptr [rbx+04],40
+// ---------- INJECTING HERE ----------
+"NeedForSpeedHeat.exe"+C06D365: F3 0F 11 73 1C        -  movss [rbx+1C],xmm6
+// ---------- DONE INJECTING  ----------
+"NeedForSpeedHeat.exe"+C06D36A: 0F 28 74 24 20        -  movaps xmm6,[rsp+20]
+"NeedForSpeedHeat.exe"+C06D36F: 48 83 C4 30           -  add rsp,30
+"NeedForSpeedHeat.exe"+C06D373: 5B                    -  pop rbx
+"NeedForSpeedHeat.exe"+C06D374: C3                    -  ret 
+"NeedForSpeedHeat.exe"+C06D375: F3 0F 11 71 1C        -  movss [rcx+1C],xmm6
+"NeedForSpeedHeat.exe"+C06D37A: 0F 28 74 24 20        -  movaps xmm6,[rsp+20]
+"NeedForSpeedHeat.exe"+C06D37F: 48 83 C4 30           -  add rsp,30
+"NeedForSpeedHeat.exe"+C06D383: 5B                    -  pop rbx
+"NeedForSpeedHeat.exe"+C06D384: C3                    -  ret 
+"NeedForSpeedHeat.exe"+C06D385: CC                    -  int 3 
+}
+</AssemblerScript>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Code :mov [rsi+000004E8],edx</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06B109</AddressString>
+      <Before>
+        <Byte>8E</Byte>
+        <Byte>90</Byte>
+        <Byte>03</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>96</Byte>
+        <Byte>E8</Byte>
+        <Byte>04</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>E8</Byte>
+        <Byte>3C</Byte>
+        <Byte>E6</Byte>
+        <Byte>A0</Byte>
+        <Byte>F5</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Code :mov [rbx+000004E8],edx</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06B5A5</AddressString>
+      <Before>
+        <Byte>8B</Byte>
+        <Byte>90</Byte>
+        <Byte>03</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>93</Byte>
+        <Byte>E8</Byte>
+        <Byte>04</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>E8</Byte>
+        <Byte>A0</Byte>
+        <Byte>E1</Byte>
+        <Byte>A0</Byte>
+        <Byte>F5</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Code :mov [rcx+00000190],edx</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06E34D</AddressString>
+      <Before>
+        <Byte>74</Byte>
+        <Byte>3C</Byte>
+        <Byte>8B</Byte>
+        <Byte>50</Byte>
+        <Byte>20</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>91</Byte>
+        <Byte>90</Byte>
+        <Byte>01</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>48</Byte>
+        <Byte>83</Byte>
+        <Byte>C1</Byte>
+        <Byte>38</Byte>
+        <Byte>48</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of dec edx</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06B100</AddressString>
+      <Before>
+        <Byte>00</Byte>
+        <Byte>85</Byte>
+        <Byte>D2</Byte>
+        <Byte>7E</Byte>
+        <Byte>14</Byte>
+      </Before>
+      <Actual>
+        <Byte>FF</Byte>
+        <Byte>CA</Byte>
+      </Actual>
+      <After>
+        <Byte>48</Byte>
+        <Byte>8D</Byte>
+        <Byte>8E</Byte>
+        <Byte>90</Byte>
+        <Byte>03</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [rbx+000004E8],edx</Description>
+      <AddressString>13FFE0000</AddressString>
+      <Before/>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>93</Byte>
+        <Byte>E8</Byte>
+        <Byte>04</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>E9</Byte>
+        <Byte>A0</Byte>
+        <Byte>B5</Byte>
+        <Byte>08</Byte>
+        <Byte>0C</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [rsi+000004E8],edx</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06B109</AddressString>
+      <Before>
+        <Byte>0E</Byte>
+        <Byte>0F</Byte>
+        <Byte>1F</Byte>
+        <Byte>40</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>96</Byte>
+        <Byte>E8</Byte>
+        <Byte>04</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>E8</Byte>
+        <Byte>3C</Byte>
+        <Byte>E6</Byte>
+        <Byte>A0</Byte>
+        <Byte>F5</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [rsi+000004E8],edx</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06B109</AddressString>
+      <Before>
+        <Byte>8E</Byte>
+        <Byte>90</Byte>
+        <Byte>03</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>96</Byte>
+        <Byte>E8</Byte>
+        <Byte>04</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>E8</Byte>
+        <Byte>3C</Byte>
+        <Byte>E6</Byte>
+        <Byte>A0</Byte>
+        <Byte>F5</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of inc edx</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06B59C</AddressString>
+      <Before>
+        <Byte>2F</Byte>
+        <Byte>41</Byte>
+        <Byte>5C</Byte>
+        <Byte>72</Byte>
+        <Byte>21</Byte>
+      </Before>
+      <Actual>
+        <Byte>FF</Byte>
+        <Byte>C2</Byte>
+      </Actual>
+      <After>
+        <Byte>48</Byte>
+        <Byte>8D</Byte>
+        <Byte>8B</Byte>
+        <Byte>90</Byte>
+        <Byte>03</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of movss [rcx+20],xmm6</Description>
+      <AddressString>NeedForSpeedHeat.exe+C069367</AddressString>
+      <Before>
+        <Byte>28</Byte>
+        <Byte>F1</Byte>
+        <Byte>48</Byte>
+        <Byte>89</Byte>
+        <Byte>CF</Byte>
+      </Before>
+      <Actual>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>11</Byte>
+        <Byte>71</Byte>
+        <Byte>20</Byte>
+      </Actual>
+      <After>
+        <Byte>0F</Byte>
+        <Byte>2E</Byte>
+        <Byte>B1</Byte>
+        <Byte>F8</Byte>
+        <Byte>03</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of jmp NeedForSpeedHeat.exe+C06D750</Description>
+      <AddressString>NeedForSpeedHeat.exe+1A79750</AddressString>
+      <Before>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+      </Before>
+      <Actual>
+        <Byte>E9</Byte>
+        <Byte>FB</Byte>
+        <Byte>3F</Byte>
+        <Byte>5F</Byte>
+        <Byte>0A</Byte>
+      </Actual>
+      <After>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+        <Byte>CC</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of add [rax],al</Description>
+      <AddressString>19B523EC4</AddressString>
+      <Before>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>2E</Byte>
+        <Byte>55</Byte>
+      </Before>
+      <Actual>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>04</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of add [rax],al</Description>
+      <AddressString>19B523EC6</AddressString>
+      <Before>
+        <Byte>00</Byte>
+        <Byte>2E</Byte>
+        <Byte>55</Byte>
+        <Byte>90</Byte>
+        <Byte>90</Byte>
+      </Before>
+      <Actual>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>04</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>05</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of movss [rcx+000004D0],xmm7</Description>
+      <AddressString>NeedForSpeedHeat.exe+C066E06</AddressString>
+      <Before>
+        <Byte>0F</Byte>
+        <Byte>29</Byte>
+        <Byte>44</Byte>
+        <Byte>24</Byte>
+        <Byte>30</Byte>
+      </Before>
+      <Actual>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>11</Byte>
+        <Byte>B9</Byte>
+        <Byte>D0</Byte>
+        <Byte>04</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>0F</Byte>
+        <Byte>28</Byte>
+        <Byte>DF</Byte>
+        <Byte>B9</Byte>
+        <Byte>08</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of movss [rbx+000004E4],xmm0</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06B58E</AddressString>
+      <Before>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>5D</Byte>
+        <Byte>41</Byte>
+        <Byte>5C</Byte>
+      </Before>
+      <Actual>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>11</Byte>
+        <Byte>83</Byte>
+        <Byte>E4</Byte>
+        <Byte>04</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>0F</Byte>
+        <Byte>2F</Byte>
+        <Byte>41</Byte>
+        <Byte>5C</Byte>
+        <Byte>72</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of movss [rsi+00000364],xmm6</Description>
+      <AddressString>NeedForSpeedHeat.exe+C066ED1</AddressString>
+      <Before>
+        <Byte>F1</Byte>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>5F</Byte>
+        <Byte>F7</Byte>
+      </Before>
+      <Actual>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>11</Byte>
+        <Byte>B6</Byte>
+        <Byte>64</Byte>
+        <Byte>03</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>48</Byte>
+        <Byte>8B</Byte>
+        <Byte>86</Byte>
+        <Byte>A0</Byte>
+        <Byte>04</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of mov [rdx],ebx</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06ADD5</AddressString>
+      <Before>
+        <Byte>C1</Byte>
+        <Byte>90</Byte>
+        <Byte>03</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Before>
+      <Actual>
+        <Byte>89</Byte>
+        <Byte>1A</Byte>
+      </Actual>
+      <After>
+        <Byte>E8</Byte>
+        <Byte>04</Byte>
+        <Byte>E9</Byte>
+        <Byte>A0</Byte>
+        <Byte>F5</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of movss [rbx+1C],xmm6</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06D365</AddressString>
+      <Before>
+        <Byte>F5</Byte>
+        <Byte>83</Byte>
+        <Byte>4B</Byte>
+        <Byte>04</Byte>
+        <Byte>40</Byte>
+      </Before>
+      <Actual>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>11</Byte>
+        <Byte>73</Byte>
+        <Byte>1C</Byte>
+      </Actual>
+      <After>
+        <Byte>0F</Byte>
+        <Byte>28</Byte>
+        <Byte>74</Byte>
+        <Byte>24</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>Change of movss [rcx+1C],xmm6</Description>
+      <AddressString>NeedForSpeedHeat.exe+C06D375</AddressString>
+      <Before>
+        <Byte>83</Byte>
+        <Byte>C4</Byte>
+        <Byte>30</Byte>
+        <Byte>5B</Byte>
+        <Byte>C3</Byte>
+      </Before>
+      <Actual>
+        <Byte>F3</Byte>
+        <Byte>0F</Byte>
+        <Byte>11</Byte>
+        <Byte>71</Byte>
+        <Byte>1C</Byte>
+      </Actual>
+      <After>
+        <Byte>0F</Byte>
+        <Byte>28</Byte>
+        <Byte>74</Byte>
+        <Byte>24</Byte>
+        <Byte>20</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+</CheatTable>

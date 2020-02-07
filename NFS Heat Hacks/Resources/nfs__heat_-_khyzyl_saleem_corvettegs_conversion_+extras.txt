@@ -1,0 +1,46 @@
+Khyzyl Saleem Corvette Grand Sport + Cop and ZR1 part IDs
+(Conversion from stock Corvette Grand Sport)
+Preview of the final K.S car/kit http://0x0.st/z65S.png
+
+Requirements:
+Need for Speed: Heat.
+Stock Corvette Grand Sport unlocked.
+Cheat Engine.
+Recommended to have a backup save in case something goes wrong.
+-Default save location: C:\USERNAME\Documents\Need for Speed Heat "SaveGame" folder.
+
+Swap at garage:
+(hover over the specific part before swapping ID, and then swap and buy)
+Khyzyl Saleem Parts:
+FrontBumper (Alchemist): 61968075 -> 40242148
+RearBumper (Speedhunters): 11781267 -> 33664199
+Canards (Prior): 36583186 -> 16216711
+Diffuser (Prior): 23254 -> 33099340
+Exhaust (Speedhunters 1000$ one): 18183535 -> 57787217
+FrontFenders (Speedhunters 1250$ one) 53342955 -> 27069841
+RearFenders (Alchemist): 20509933 -> 61704982
+Hood (Speedhunters): 51634930 -> 36610800
+Roof (Chevrolet): 7092892 -> 57443411
+Skirts (Prior): 20871762 -> 7650771
+Splitter (Alchemist) 54665697 -> 48498683
+Spoiler (Alchemist) 39146994 -> 37040661
+
+Extra parts (Use these IDs instead of the K.S Part ones if you want some of them)
+Cop Parts:
+FrontBumper: 66209008
+RearBumper: 61477566
+Roof: 60660922
+
+ZR1 Parts:
+FrontBumper: 45034779
+RearBumper: 17392503
+FrontFenders: 1744085
+RearFenders: 20332466
+Exhausts: 30106742
+Hood: 58340191
+Roof1: 55571831
+Roof2: 12549973
+Skirts: 25101987
+Splitter: 55237474
+Spoiler: 60336860
+Taillights (Black ones): 43596776 -> 20934437

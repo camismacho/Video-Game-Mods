@@ -1,0 +1,111 @@
+Recommended to have a backup save in case something goes wrong.
+-Default save location: C:\USERNAME\Documents\Need for Speed Heat "SaveGame" folder.
+
+Tire smoke:
+Swap "47073708" (Blue) with "5032904" (Platinum Blue), buy the blue tire smoke, re-enter the menu and buy the platinum blue tire smoke
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+
+Nos/Nitrous colors
+Swap "4411456" (Blue) with any of the IDs below, buy the blue nos flame color, re-enter the menu and buy your desired nos flame color
+
+
+ID		NosFlameItemData	| Localization
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+34234692	NosFlameItem_M_Cyan	| CYAN NITROUS
+24510787	NosFlameItem_M_Orange	| ORANGE NITROUS
+25237105	NosFlameItem_M_Pink	| PINK NITROUS
+30536896	NosFlameItem_M_Purple	| PURPLE NITROUS
+59990894	NosFlameItem_Platinum	| PLATINUM BLUE NITROUS
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+Horns:
+Swap "59781918" (Boat) with any of the IDs below, buy the boat horn, re-enter the menu and buy your desired horn
+
+
+ID		HornItemData	| Localization
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+18831497	Horn_01		| CAVALRY CHARGE
+31007327	Horn_02		| DRUNKEN SAILOR
+6023887		Horn_03 	| FOR HE'S A JOLLY GOOD FELLOW
+13012894	Horn_05 	| JINGLE BELLS
+51320460	Horn_06 	| LA DONA E MOBILE
+38139339	Horn_07 	| OH WHEN THE SAINTS
+16861655	Horn_08 	| SHE'LL BE COMING ROUND THE MOUNTAIN
+52656344	Horn_09 	| THE ENTERTAINER
+1435419		Horn_24 	| ICE CREAM
+37123580	Horn_25 	| STEAM WHISTLE
+64181716	Horn_26 	| TRAIN
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+(non-functional) 22074239	Horn_27 	| COP SIREN WAIL
+(non-functional) 62903117	Horn_28 	| COP SIREN YELP 1
+(non-functional) 38244099	Horn_29 	| COP SIREN HI-LO
+(non-functional) 49466039	Horn_30 	| COP SIREN YELP 2
+
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+
+Neons/Underglow:
+Swap "14727988" (Violet) with any of the IDs below, buy the violet neon, re-enter the menu and buy your desired neon
+
+
+ID		NeonItemData		| Localization
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+52247497	CandyPinkNeons		| CANDY PINK UNDERGLOW
+49814967	CandyPinkNeons_Wave	| CANDY PINK WAVE
+26396485	CoralNeons		| CORAL UNDERGLOW
+22789469	CoralNeons_Step		| CORAL STEP
+55412329	CyanNeons		| CYAN UNDERGLOW
+19554522	GoldNeons		| GOLD UNDERGLOW
+20612229	PlatinumBlueNeons	| PLATINUM BLUE UNDERGLOW
+40557984	SteelBlueNeons		| STEEL BLUE UNDERGLOW
+59682240	SteelBlueNeons_Wave	| STEEL BLUE WAVE
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+57035744	Neon_Halloween		| BOO
+30419988	Neon_July4th		| INDEPENDENCE DAY
+52182238	Neon_Valentine		| VALENTINE
+32496628	Neon_Xmas		| JUNGLE BELLS
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+55307449	Neons_01_Step		| RED STEP
+2131735		Neons_01_Wave		| RED WAVE
+19285658	Neons_02_Step		| PINK STEP
+2250845		Neons_02_Wave		| PINK WAVE
+24401787	Neons_03_Step		| PURPLE STEP
+48451992	Neons_03_Wave		| PURPLE WAVE
+60474184	Neons_04_Step		| VIOLET STEP
+2632863		Neons_04_Wave		| VIOLET WAVE
+30546277	Neons_05_Step		| BLUE STEP
+31820108	Neons_05_Wave		| BLUE WAVE
+30715840	Neons_06_Step		| TURQUOISE STEP
+59769983	Neons_06_Wave		| TURQUOISE WAVE
+51954949	Neons_07_Step		| MINT STEP
+9937524		Neons_07_Wave		| MINT WAVE
+13277628	Neons_08_Step		| GREEN STEP
+34757394	Neons_08_Wave		| GREEN WAVE
+30978306	Neons_09_Step		| LIME STEP
+52068467	Neons_09_Wave		| LIME WAVE
+23484038	Neons_10_Step		| ORANGE STEP
+38137904	Neons_10_Wave		| ORANGE WAVE
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+6203129		Neons_Cop_01		| COP UNDERGLOW
+9924389		Neons_Cop_03		| THE CHASE
+57106983	Neons_Cop_04		| FVPD
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+62312565	Neons_Rare_Step_01	| RAINBOW DANCE
+15862567	Neons_Rare_Step_02	| SOLAR STORM
+30590366	Neons_Rare_Step_03	| BLIZZARD
+11927737	Neons_Rare_Step_04	| FIREWORK
+47115123	Neons_Rare_Step_05	| WATERFALL
+32811072	Neons_Rare_Wave_01	| RAINBOW DREAM
+25846252	Neons_Rare_Wave_02	| HEAT WAVE
+34581380	Neons_Rare_Wave_03	| SPRING DEW
+19191529	Neons_Rare_Wave_04	| AUSTRALIS
+9015399		Neons_Rare_Wave_05	| BOREALIS
+19570836	Neons_MegaRare_Step_01	| THE CODE
+43358132	Neons_MegaRare_Step_02	| COMMUNICATOR
+55784700	Neons_MegaRare_Wave_01	| BAD WEATHER
+9385001		Neons_MegaRare_Wave_02	| (not available)

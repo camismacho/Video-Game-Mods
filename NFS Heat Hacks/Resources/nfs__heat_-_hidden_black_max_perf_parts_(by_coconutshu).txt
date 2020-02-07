@@ -1,0 +1,50 @@
+Thanks to Night for telling me which ones work
+
+Recommended to have a backup save in case something goes wrong.
+-Default save location: C:\USERNAME\Documents\Need for Speed Heat "SaveGame" folder.
+
+Naturally Aspirated - 21653763
+
+Induction_6_TurboCharger - 62312123
+
+Induction_6_DualTurboCharger - 29034823
+
+Induction_6_ScrewSupercharger - 50738795
+
+Induction_6_RootsSupercharger - 44331483
+
+Induction_6_CentrifugalSupercharger - 66630321
+
+Tires_0 - 46872637
+
+Tires_6 - 63410053
+
+Tires_6_Drift1 - 48200857
+
+Tires_6_Drift2 - 64692647
+
+Tires_6_DriftOffroad1 - 13172915
+
+Tires_6_DriftOnroad1 -15677033
+
+Tires_6_Grip1 - 9999835
+
+Tires_6_Grip2 - 30635418
+
+Tires_6_GripOffroad1 - 44705220
+
+Tires_6_GripOnroad1 - 50599400
+
+Tires_6_Offroad1 - 58443763
+
+Tires_6_Offroad2 - 8108994
+
+Tires_6_Onroad1 - 55280302
+
+Tires_6_Onroad2 - 347764
+
+Brakes_1 - 65325233
+
+StandardBrakesItem - 41558170
+
+Brakes_6/Black Brakes - 52956014

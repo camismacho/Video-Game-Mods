@@ -1,0 +1,69 @@
+Version 165 32
+{
+	Shaders
+	{
+		vehicle_tire.sps
+		{
+			DiffuseSampler black 989
+			DirtSampler vehicle_generic_tyrewall_dirt
+			BumpSampler blank_normal
+			SpecSampler black 989
+			envEffTexTileUV 8.00000000
+			envEffScale 1.00000000 0.00100000
+			envEffThickness 25.00000000
+			ReflectivePower 0.45000000
+			DirtColor 0.23137200 0.22352900 0.20392100
+			DirtLevelMod 1.00000000 1.00000000 1.00000000 1.00000000
+			matDiffuseColor 2.00000000 5.00000000 5.00000000
+			TyreDeformParams2 0.26200000 1495.00000000 0.00000000 0.00000000
+		}
+		vehicle_tire.sps
+		{
+			DiffuseSampler black 989
+			DirtSampler vehicle_generic_tyrewall_dirt
+			BumpSampler blank_normal
+			SpecSampler black 989
+			envEffTexTileUV 8.00000000
+			envEffScale 1.00000000 0.00100000
+			envEffThickness 25.00000000
+			ReflectivePower 0.45000000
+			DirtColor 0.23137200 0.22352900 0.20392100
+			DirtLevelMod 1.00000000 1.00000000 1.00000000 1.00000000
+			matDiffuseColor 2.00000000 5.00000000 5.00000000
+			TyreDeformParams2 0.26200000 1495.00000000 0.00000000 0.00000000
+		}
+		vehicle_tire.sps
+		{
+			DiffuseSampler chrome
+			DirtSampler vehicle_generic_tyrewall_dirt
+			BumpSampler chrome_n
+			SpecSampler chrome_s
+			envEffTexTileUV 8.00000000
+			envEffScale 1.00000000 0.00100000
+			envEffThickness 25.00000000
+			ReflectivePower 0.45000000
+			DirtColor 0.23137200 0.22352900 0.20392100
+			DirtLevelMod 1.00000000 1.00000000 1.00000000 1.00000000
+			matDiffuseColor 2.00000000 5.00000000 5.00000000
+			TyreDeformParams2 0.26200000 1495.00000000 0.00000000 0.00000000
+		}
+	}
+	Skeleton wheel_off_01\wheel_off_01.skel
+	LodGroup
+	{
+		Center 0.00000000 0.00000000 0.00000000
+		Radius 0.79139890
+		AABBMin -0.22638510 -0.53833630 -0.53410540
+		AABBMax 0.22638510 0.53833630 0.53410540
+		High 9998.00000000
+		{
+			wheel_off_01\wheel_off_01_high.mesh 0
+		}
+		Med 9998.00000000
+		Low 9998.00000000
+		Vlow 9998.00000000
+	}
+	Joints null
+	Light null
+	Bound null
+}

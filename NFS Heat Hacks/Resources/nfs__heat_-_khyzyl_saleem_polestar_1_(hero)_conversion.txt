@@ -1,0 +1,27 @@
+Hero Polestar 1 part IDs
+(Conversion from stock Polestar 1)
+Preview of the final car/kit: http://0x0.st/z65B.png
+
+Requirements:
+Need for Speed: Heat.
+Stock Polestar 1 unlocked.
+Cheat Engine.
+Recommended to have a backup save in case something goes wrong.
+-Default save location: C:\USERNAME\Documents\Need for Speed Heat "SaveGame" folder.
+
+Swap in dealership: 
+Boot/Trunk: 41887781 -> 7623792
+Roof: 60259520 -> 33864919 (will make diffuser dissapear, just rebuy at garage)
+
+Swap at garage:
+(hover over the specific part before swapping ID, and then swap and buy)
+FrontBumper (Speedhunters): 5669886 -> 27961820
+Canards (Alchemist): 66246814 -> 35122730
+FrontFenders (Alchemist): 36521950 -> 8904984
+RearFenders (Alchemist): 8124278 -> 44824297
+Grille (Alchemist): 16372487 -> 3412290
+Hood (Alchemist): 1834929 -> 62706638
+Mirrors (Chidori 1000$ one): 60337191 -> 54159714
+Skirts (Alchemist): 32172869 -> 6234183
+Splitter (Alchemist): 417351 -> 52431364
+Spoiler: (Alchemist): 31446692 -> 20657735
