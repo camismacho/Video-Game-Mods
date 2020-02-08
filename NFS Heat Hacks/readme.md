@@ -23,7 +23,7 @@ Also contains various resources, and a batch file to run Heat offline in one ste
                                           as well as swap to parts that aren't allowed. I aim to 
                                           create some scripts to automate certain swaps. Holding off
                                           until Frosty editor is released though.
-                                          
+----------------------------                                          
 2: Disable Busting.LUA
    
    This small script will perform an array of bytes search within Cheat Engine, and perform a swap. 
@@ -34,7 +34,7 @@ Also contains various resources, and a batch file to run Heat offline in one ste
    to "true". So you can simply input the bytes for the false statement for 'pattern', and then put
    the true statement bytes into 'replace'. It will save the original bytes, and replace them with
    the new ones. It also provides enable/disable functionaltiy for CE, which sometimes doesn't work :(
-   
+----------------------------   
 3: Origin Offline.bat
 
    This is a simple Batch file I wrote to play NFS Heat in offline mode in one easy step. EA doesn't
@@ -45,18 +45,18 @@ Also contains various resources, and a batch file to run Heat offline in one ste
    and subsequently runs NFS Heat, which forces Origin into offline mode. It then waits 30 secs, and prompts
    you to press any key to enable the adapter. This way if your game crashes you can easily restart, and in general
    allows you to play offline in one click. Easy!
-   
+----------------------------   
 4: Resources
 
    This directory is full of ID dumps for NFS Heat. I compiled my most-used ID into "Favorite Heat Things". This includes
    Suspenion IDs, Engine IDs, all Performance IDs, and various other tweaks. This list was compiled from the other dumps
    (not my dumps, credits to respective authors) found in this folder.
-
+----------------------------
 5: NFS Heat Save Backup
    
    This contains my savegame backups. Legit contains my original un-modded backup for online play. Modded contains
    my modded save with $1.5 billion, plus many hacked cars with modded engine/suspension swaps and black parts/cop NOS.
-   
+----------------------------   
 6: Pointer Scans
 
    These are pointer scan files that I use with Cheat Engine. These basically allow you to track down addresses within a
